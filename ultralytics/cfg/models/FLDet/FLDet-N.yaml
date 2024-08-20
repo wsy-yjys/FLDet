@@ -1,0 +1,25 @@
+# same with ultralytics/cfg/models/FLDet/DetBest.yaml
+
+# Parameters
+nc: 10  # number of classes
+depth_multiple: 1  # scales module repeats
+width_multiple: 1  # scales convolution channels
+
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, Conv, [16, 3, 2]]   # 0-P1/2
+  - [-1, 1, Conv, [32, 3, 2]]   # 1-P2/4
+  - [-1, 1, IEPR, [32, 2, 2, True, "deepextend"]]
+  - [-1, 1, IEPR, [32, 2, 2, True, "deepextend"]] # 3
+  - [-1, 1, Conv, [64, 3, 2]]   # 4-P3/8
+  - [-1, 1, IEPR, [64, 2, 2, True, "deepextend"]]
+  - [-1, 1, ECM, [64, 13, 0.25, 3]]
+  - [-1, 1, IEPR, [64, 2, 2, True, "deepextend"]] # 7
+  - [-1, 1, Conv, [128, 3, 2]]  # 7-P4/16
+  - [-1, 1, ECM, [128, 13, 0.25, 3]] # 9
+  - [-1, 1, ECM, [128, 13, 0.25, 3]] # 10
+
+head:
+  - [[3, 7, 10], 1, CSNeck3in, [32, 64, 128, False, 2]]   # cat backbone P2
+
+  - [-1, 1, Detect, ["SiLU", "normal", nc]]         # Detect(P2, P4)
