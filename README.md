@@ -1,6 +1,8 @@
 # FLDet: A Faster and Lighter Aerial Object Detector
 
-<img src="fig/result.png" alt="AP-Latency_houzhui_00" style="zoom:50%;" />
+<p align="center">
+    <img src="fig/result.png"  align="middle" width = "700" />
+</p>
 
 
 
@@ -8,17 +10,17 @@
 
 ### VisDrone2019
 
-| Model   | Size | AP(%) | AP$_{50}$(%) | AP$_S$(%) | AP$_M$(%) | AP$_L$(%) | #Params.(M) | FLOPs(G) | Latency(ms) | FPS  | Weight&train.log                                             |
-| ------- | ---- | ----- | ------------ | --------- | --------- | --------- | ----------- | -------- | ----------- | ---- | ------------------------------------------------------------ |
-| FLDet-N | 640  | 16.7  | 30.1         | 8.3       | 25.3      | 34.3      | 1.2         | 12.3     | 17.9        | 55.9 | [Google Drive](https://drive.google.com/drive/folders/1BXsWjUddzvDL89Gw69CoPNBfCrCxNsb1?usp=sharing) |
-| FLDet-S | 640  | 18.8  | 33.4         | 9.3       | 28.7      | 38.5      | 2.4         | 26.9     | 24.3        | 41.2 | [Google Drive](https://drive.google.com/drive/folders/1ktOuLqjgbrIYhcZ11jFlvhy_FGlm4lwj?usp=sharing) |
+| Model   | Size | AP(%) | AP50(%) | #Params.(M) | FLOPs(G) | Latency(ms) | FPS  | Weight&train.log                                             |
+| :-----: | ---- | :---: |:--------:| :---------: | :------: | :---------: | :--: | :----------------------------------------------------------: |
+| FLDet-N | 640  | 16.7  | 30.1     | 1.2         | 12.3     | 17.9        | 55.9 | [Google Drive](https://drive.google.com/drive/folders/1BXsWjUddzvDL89Gw69CoPNBfCrCxNsb1?usp=sharing) |
+| FLDet-S | 640  | 18.8  | 33.4     | 2.4         | 26.9     | 24.3        | 41.2 | [Google Drive](https://drive.google.com/drive/folders/1ktOuLqjgbrIYhcZ11jFlvhy_FGlm4lwj?usp=sharing) |
 
 ### UAVDT
 
-| Model   | Size | AP(%) | AP$_{50}$(%) | AP$_S$(%) | AP$_M$(%) | AP$_L$(%) | #Params.(M) | FLOPs(G) | Latency(ms) | FPS  | Weight&train.log                                             |
-| ------- | ---- | ----- | ------------ | --------- | --------- | --------- | ----------- | -------- | ----------- | ---- | ------------------------------------------------------------ |
-| FLDet-N | 640  | 16.8  | 28.8         | 11.4      | 26.0      | 39.0      | 1.2         | 12.3     | 17.8        | 56.2 | [Google Drive](https://drive.google.com/drive/folders/1jGn8HVI6jfGbfvjtZ1pzlE2P4RoAEMcB?usp=sharing) |
-| FLDet-S | 640  | 17.5  | 30.3         | 12.5      | 27.8      | 33.0      | 2.4         | 26.9     | 24.2        | 41.3 | [Google Drive](https://drive.google.com/drive/folders/1rwlBxh4RCH48dbJw4Uwil8ePuj-YQ5vt?usp=sharing) |
+|  Model  | Size | AP(%) | AP50(%) | #Params.(M) | FLOPs(G) | Latency(ms) | FPS  |                       Weight&train.log                       |
+| :-----: | :--: | :---: | :-----: | :---------: | :------: | :---------: | :--: | :----------------------------------------------------------: |
+| FLDet-N | 640  | 16.8  |  28.8   |     1.2     |   12.3   |    17.8     | 56.2 | [Google Drive](https://drive.google.com/drive/folders/1jGn8HVI6jfGbfvjtZ1pzlE2P4RoAEMcB?usp=sharing) |
+| FLDet-S | 640  | 17.5  |  30.3   |     2.4     |   26.9   |    24.2     | 41.3 | [Google Drive](https://drive.google.com/drive/folders/1rwlBxh4RCH48dbJw4Uwil8ePuj-YQ5vt?usp=sharing) |
 
 
 
