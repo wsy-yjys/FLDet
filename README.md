@@ -72,14 +72,14 @@ More super parameters about training please refer to  [Ultralytics YOLOv8 Docs](
 
 ```shell
 % FLDet-N
-yolo detect train data=UAVDT.yaml model=FLDet-N.yaml imgsz=640 device=0,1,2,3 optimizer=SGD lr0=0.08 name=test_UAVDT_FLDet-N epochs=100 batch=32 save_json=True decay_aug=True mosaic=1.0 copy_paste=1.0 mixup=1.0 close_mixup=75 close_mosaic=50 close_copy_paste=25> test_UAVDT_FLDet-N.log 2>&1 &
+yolo detect train data=UAVDT.yaml model=FLDet-N.yaml imgsz=640 device=0,1,2,3 optimizer=SGD lr0=0.08 name=test_UAVDT_FLDet-N epochs=100 batch=32 save_json=True decay_aug=True mosaic=1.0 copy_paste=1.0 mixup=1.0 close_mixup=75 close_mosaic=50 close_copy_paste=25 > test_UAVDT_FLDet-N.log 2>&1 &
 
 % FLDet-S
-yolo detect train data=UAVDT.yaml model=FLDet-S.yaml imgsz=640 device=0,1,2,3 optimizer=SGD lr0=0.08 name=test_UAVDT_FLDet-S epochs=100 batch=32 save_json=True decay_aug=True mosaic=1.0 copy_paste=1.0 mixup=1.0 close_mixup=75 close_mosaic=50 close_copy_paste=25> test_UAVDT_FLDet-S.log 2>&1 &
+yolo detect train data=UAVDT.yaml model=FLDet-S.yaml imgsz=640 device=0,1,2,3 optimizer=SGD lr0=0.08 name=test_UAVDT_FLDet-S epochs=100 batch=32 save_json=True decay_aug=True mosaic=1.0 copy_paste=1.0 mixup=1.0 close_mixup=75 close_mosaic=50 close_copy_paste=25 > test_UAVDT_FLDet-S.log 2>&1 &
 ```
 
 ### Evaluation
 
 ```shell
-yolo detect val data=/path/to/data.yaml model=/path/to/your/best.pt testspeed=False save_json=True name=your-work-dir > val.log 2>&1 &
+yolo detect val data=/path/to/data.yaml model=/path/to/your/best.pt testspeed=False save_json=True name=your-work-dir half=True > val.log 2>&1 &
 ```
