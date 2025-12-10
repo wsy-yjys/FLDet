@@ -12,7 +12,7 @@
 
 | Model   | Size | AP(%) | AP50(%) | #Params. | FLOPs | Latency | FPS  | Weight&train.log                                             |
 | :-----: | :--: | :---: |:--------:| :---------: | :------: | :---------: | :--: | :----------------------------------------------------------: |
-| FLDet-N | 640  | 16.7  | 30.1     | 1.2M        | 12.3G    | 17.9ms      | 55.9 | [Google Drive](https://drive.google.com/drive/folders/1BXsWjUddzvDL89Gw69CoPNBfCrCxNsb1?usp=sharing) |
+| FLDet-N | 640  | 16.6  | 29.9     | 1.2M        | 12.3G    | 17.9ms      | 55.9 | [Google Drive](https://drive.google.com/drive/folders/1BXsWjUddzvDL89Gw69CoPNBfCrCxNsb1?usp=sharing) |
 | FLDet-S | 640  | 18.8  | 33.4     | 2.4M        | 26.9G    | 24.3ms      | 41.2 | [Google Drive](https://drive.google.com/drive/folders/1ktOuLqjgbrIYhcZ11jFlvhy_FGlm4lwj?usp=sharing) |
 
 ### UAVDT
